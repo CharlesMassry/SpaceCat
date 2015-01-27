@@ -7,7 +7,7 @@
 //
 
 #import "GameViewController.h"
-#import "GameScene.h"
+#import "TitleScene.h"
 
 @implementation SKScene (Unarchive)
 
@@ -30,9 +30,9 @@
 
 @implementation GameViewController
 
-- (void)viewDidLoad
+- (void)viewDidLayoutSubviews
 {
-    [super viewDidLoad];
+    [super viewDidLayoutSubviews];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -42,11 +42,15 @@
     skView.ignoresSiblingOrder = YES;
     
     // Create and configure the scene.
-    GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    TitleScene *scene = [TitleScene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeResizeFill;
     
     // Present the scene.
     [skView presentScene:scene];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (BOOL)shouldAutorotate
@@ -67,10 +71,6 @@
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
-}
-
-- (BOOL)prefersStatusBarHidden {
-    return YES;
 }
 
 @end
