@@ -17,8 +17,17 @@
     projectile.name = @"Projectile";
     
     [projectile setupAnimation];
+    [projectile setupPhysicsBody];
     
     return projectile;
+}
+
+- (void) setupPhysicsBody {
+    self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
+    self.physicsBody.affectedByGravity = NO;
+    self.physicsBody.categoryBitMask = CollisionCategoryProjectile;
+    self.physicsBody.collisionBitMask = 0;
+    self.physicsBody.contactTestBitMask = CollisionCategoryEnemy;
 }
 
 - (void) setupAnimation {

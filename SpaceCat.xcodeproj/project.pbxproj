@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350190771A78618D0075772C /* SpaceDogNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 350190761A78618D0075772C /* SpaceDogNode.m */; };
+		3501907A1A7866C40075772C /* GroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 350190791A7866C40075772C /* GroundNode.m */; };
 		352187121A7722A100862DC5 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 352187111A7722A100862DC5 /* Util.m */; };
 		352EAD0C1A75C99C001D3019 /* MachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 352EAD0B1A75C99C001D3019 /* MachineNode.m */; };
 		352EAD0F1A75CD64001D3019 /* SpaceCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 352EAD0E1A75CD64001D3019 /* SpaceCatNode.m */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		350190751A78618D0075772C /* SpaceDogNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceDogNode.h; sourceTree = "<group>"; };
+		350190761A78618D0075772C /* SpaceDogNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceDogNode.m; sourceTree = "<group>"; };
+		350190781A7866C40075772C /* GroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundNode.h; sourceTree = "<group>"; };
+		350190791A7866C40075772C /* GroundNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroundNode.m; sourceTree = "<group>"; };
 		352187101A7722A100862DC5 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		352187111A7722A100862DC5 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		352EAD0A1A75C99C001D3019 /* MachineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineNode.h; sourceTree = "<group>"; };
@@ -113,6 +119,10 @@
 				3556CAD71A75A7FD00653EC9 /* GamePlayScene.m */,
 				352EAD0D1A75CD64001D3019 /* SpaceCatNode.h */,
 				352EAD0E1A75CD64001D3019 /* SpaceCatNode.m */,
+				350190751A78618D0075772C /* SpaceDogNode.h */,
+				350190761A78618D0075772C /* SpaceDogNode.m */,
+				350190781A7866C40075772C /* GroundNode.h */,
+				350190791A7866C40075772C /* GroundNode.m */,
 				352EAD101A75D52F001D3019 /* ProjectileNode.h */,
 				352EAD111A75D52F001D3019 /* ProjectileNode.m */,
 				352EAD0A1A75C99C001D3019 /* MachineNode.h */,
@@ -259,8 +269,10 @@
 				352EAD121A75D530001D3019 /* ProjectileNode.m in Sources */,
 				359D9C061A749EEE00C4A2FD /* GameViewController.m in Sources */,
 				359D9BFE1A749EEE00C4A2FD /* AppDelegate.m in Sources */,
+				350190771A78618D0075772C /* SpaceDogNode.m in Sources */,
 				3556CAD81A75A7FD00653EC9 /* GamePlayScene.m in Sources */,
 				352EAD0F1A75CD64001D3019 /* SpaceCatNode.m in Sources */,
+				3501907A1A7866C40075772C /* GroundNode.m in Sources */,
 				359D9BFB1A749EEE00C4A2FD /* main.m in Sources */,
 				352187121A7722A100862DC5 /* Util.m in Sources */,
 			);
